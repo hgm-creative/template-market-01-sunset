@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#a94b23">
+<meta name="description" content="Sunset Market — groceries, snacks, cold drinks and everyday essentials. Fictional market website demo by Homegrown Marketing.">
+<title>Sunset Market — Neighborhood Market</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700;800;900&family=DM+Sans:wght@400;500;600;700&family=DM+Serif+Display&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#292322;--wood:#3c2820;--red:#ac463d;--cream:#f1e9dc;--pale:#f9f4eb;--gray:#73675f;--line:#d5c7b7;--neon:#ff6b5a}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font:16px/1.55 'DM Sans',Arial,sans-serif}a{color:inherit;text-decoration:none}button{font:inherit;cursor:pointer}img{display:block;max-width:100%}.container{width:min(1190px,calc(100% - 60px));margin:auto}.top{background:#24201e;color:#f0e3d3;padding:9px 0;font:600 11px 'DM Sans',sans-serif;letter-spacing:.13em;text-align:center}.nav{background:var(--pale);border-bottom:1px solid var(--line)}.navin{display:flex;align-items:center;justify-content:space-between;gap:25px;min-height:83px}.wordmark{font:800 29px/.9 'Barlow Condensed',Impact,sans-serif;letter-spacing:.025em;text-transform:uppercase}.wordmark small{display:block;font:600 9px 'DM Sans',sans-serif;letter-spacing:.14em;margin-top:7px}.links{display:flex;align-items:center;gap:26px;font-size:12px;text-transform:uppercase;letter-spacing:.07em;font-weight:700}.links a:hover,.links a:focus-visible{text-decoration:underline;text-underline-offset:5px}.lang{display:flex;border:1px solid #b2a499;border-radius:3px;gap:2px;padding:3px;flex-shrink:0}.lang button{border:0;background:transparent;padding:6px 9px;font-size:11px;font-weight:800;color:#534944;border-radius:2px}.lang button[aria-pressed=true]{background:var(--ink);color:white}.smallcaps{font:700 12px 'DM Sans',Arial,sans-serif;text-transform:uppercase;letter-spacing:.18em}.hero{background:var(--wood) url('sunset-hero.jpg') center/cover;color:white;position:relative}.hero:before{content:"";position:absolute;inset:0;background:linear-gradient(100deg,rgba(24,17,14,.88),rgba(24,17,14,.64) 58%,rgba(24,17,14,.32))}.heroin{position:relative;display:grid;grid-template-columns:.82fr 1.18fr;align-items:stretch;gap:52px;padding:76px 0 87px;min-height:610px}.herotext{align-self:center}.since{color:#dfc3a1;letter-spacing:.19em;font-size:11px;font-weight:700;text-transform:uppercase}.hero h1{font:900 clamp(78px,9.4vw,145px)/.75 'Barlow Condensed',Impact,sans-serif;letter-spacing:-.025em;margin:28px 0 25px;text-transform:uppercase}.hero h1 span{display:block}.rule{height:2px;width:70px;background:#d6ae86;margin:27px 0}.hero p{font:500 17px/1.8 'DM Sans',sans-serif;color:#f1e7dc;max-width:355px;margin:0}.actions{display:flex;gap:11px;flex-wrap:wrap;margin-top:30px}.btn{border:1px solid transparent;min-height:47px;padding:12px 20px;display:inline-flex;align-items:center;justify-content:center;gap:8px;text-align:center;font-size:12px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;transition:background .18s,transform .18s}.btn:hover{transform:translateY(-1px)}.btn.red{background:var(--red);color:white}.btn.light{border-color:#e9d9c5;color:#fff;background:#20181355}.btn.dark{background:var(--ink);color:#fff}.heroimage{position:relative;align-self:center;margin:10px 0 0}.heroimage img{height:440px;width:100%;object-fit:cover;object-position:52% 50%;filter:saturate(.86) contrast(1.03);box-shadow:0 18px 30px #0d090882}.heroimage:after{content:"";position:absolute;inset:0;pointer-events:none;box-shadow:inset 0 0 0 7px #e8d6bd24}.open-sign{position:absolute;right:-17px;bottom:-27px;background:#211514;border:1px solid #5c3b37;border-radius:7px;padding:12px 19px 11px;transform:rotate(-5deg);box-shadow:0 10px 23px #170a0a90;display:grid;justify-items:center;z-index:1}.open-sign .neon{font:700 28px/.9 'Barlow Condensed',Impact,sans-serif;letter-spacing:.17em;color:#ffd8cf;text-shadow:0 0 2px #fff,0 0 5px #ff7d65,0 0 12px #fb5447,0 0 22px #fd3c32}.open-sign small{color:#d8b6a6;letter-spacing:.16em;font-size:9px;margin-top:6px}.bar{background:#b34d42;color:#fff1df;padding:14px 0}.barin{display:flex;align-items:center;justify-content:center;gap:35px;flex-wrap:wrap;font:700 14px 'Barlow Condensed',Impact,sans-serif;letter-spacing:.12em;text-transform:uppercase}.barin .sep{opacity:.55}.section{padding:81px 0}.eyebrow{font-size:11px;letter-spacing:.18em;font-weight:800;text-transform:uppercase;color:var(--red)}h2{font:800 clamp(37px,4vw,57px)/.98 'Barlow Condensed',Impact,sans-serif;letter-spacing:.008em;text-transform:uppercase;margin:14px 0 23px}p{margin-top:0}.sectionhead{display:flex;align-items:end;justify-content:space-between;gap:25px;margin-bottom:28px}.sectionhead p{max-width:430px;color:#685e56;font-size:14px;margin:0}.categories{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.cat{background:#fbf7ee;border:1px solid var(--line);padding:25px 23px 26px;min-height:150px;display:flex;flex-direction:column;justify-content:space-between}.cat .index{font:700 12px 'Barlow Condensed',sans-serif;color:var(--red);letter-spacing:.1em}.cat h3{font:700 27px/1 'Barlow Condensed',Impact,sans-serif;text-transform:uppercase;letter-spacing:.018em;margin:30px 0 0}.photoStrip{background:#25211e;color:var(--cream)}.stripIn{display:grid;grid-template-columns:1fr .86fr;min-height:380px}.stripPhoto{background:url('sunset-market-interior.jpg') center 48%/cover;min-height:380px;filter:saturate(.83)}.stripCopy{padding:60px max(30px,calc((100vw - 1190px)/2)) 60px 65px;display:flex;flex-direction:column;justify-content:center}.stripCopy h2{color:#f5e6d4;font-size:clamp(38px,4.4vw,62px)}.stripCopy p{color:#d1c3b6;max-width:420px;font-size:15px;line-height:1.8}.stripCopy .eyebrow{color:#df9a83}.specials{background:#ded0bf url('sunset-specials.jpg') center/cover;position:relative;padding:75px 0}.specials:before{content:"";position:absolute;inset:0;background:#efe6d7db}.specialIn{position:relative;background:#f5eee2;box-shadow:0 14px 30px #3b271d45;border:1px solid #c9bbae;display:grid;grid-template-columns:1fr 1fr;gap:38px;align-items:center;padding:48px 55px}.specialIn h2{margin-bottom:17px}.specialIn p{color:#685c50;font-size:15px}.specialSign{background:#a9483d;color:#fff1e5;padding:28px;text-align:center;border:8px solid #f5eee2;outline:2px solid #a9483d}.specialSign strong{font:800 clamp(45px,5vw,75px)/.9 'Barlow Condensed',Impact,sans-serif;text-transform:uppercase;display:block;letter-spacing:.025em}.specialSign small{display:block;margin-top:12px;font:700 13px 'DM Sans',sans-serif;letter-spacing:.12em;text-transform:uppercase}.reviews{background:#f5eee2;padding:75px 0}.reviewsIn{display:flex;justify-content:space-between;gap:45px;align-items:center}.reviews h2{margin-bottom:10px}.reviewCard{border-left:3px solid var(--red);padding:10px 0 10px 27px;max-width:545px}.reviewCard p{font:400 23px/1.4 'DM Serif Display',Georgia,serif;margin:0 0 14px}.reviewCard small{font-size:11px;letter-spacing:.09em;color:#756c63}.visit{background:#e8ded0;padding:80px 0}.visitin{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:start}.details{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin:25px 0 30px}.details strong{display:block;color:#a14d44;text-transform:uppercase;letter-spacing:.1em;font-size:10px;margin-bottom:7px}.details p{font-size:14px;margin:0;line-height:1.7}.map{min-height:370px;background:#d7ccbf;border:1px solid #bdb1a5;display:grid;place-items:center;text-align:center;padding:35px}.mapIcon{font-size:38px;margin-bottom:11px}.map strong{font:700 29px 'Barlow Condensed',sans-serif;text-transform:uppercase}.map p{max-width:270px;color:#75685c;font-size:13px;line-height:1.7;margin:10px auto 0}.footer{background:#211c19;color:#d7c8b8;padding:35px 0 24px}.footin{display:flex;justify-content:space-between;align-items:center;gap:22px}.footlinks{display:flex;gap:20px;flex-wrap:wrap;font-size:12px}.disclaimer{font-size:10px;color:#a99a8e;margin-top:33px;border-top:1px solid #554a42;padding-top:19px;line-height:1.7}.mobileOnly{display:none}
+@media(max-width:900px){.links{gap:14px}.heroin{gap:25px}.hero h1{font-size:clamp(70px,10vw,110px)}.heroimage img{height:360px}.categories{grid-template-columns:repeat(2,1fr)}.stripCopy{padding:45px 35px}.visitin{gap:30px}}
+@media(max-width:680px){.container{width:min(100% - 34px,1190px)}.top{font-size:9px}.navin{min-height:68px}.wordmark{font-size:25px}.links{display:none}.hero:before{background:linear-gradient(#231713d9,#2317139e)}.heroin{grid-template-columns:1fr;gap:28px;padding:48px 0 61px}.hero h1{font-size:clamp(83px,19vw,125px);margin:22px 0 20px}.hero p{font-size:15px}.heroimage{margin:0 15px 0 0}.heroimage img{height:auto;aspect-ratio:1.35;object-fit:cover}.open-sign{right:-13px;bottom:-20px;padding:10px 13px}.open-sign .neon{font-size:23px}.barin{gap:8px 15px;font-size:12px}.barin .sep:nth-of-type(4){display:none}.section{padding:65px 0}.sectionhead{display:block}.sectionhead p{margin:0 0 22px}.categories{gap:10px}.cat{min-height:132px;padding:20px 17px}.cat h3{font-size:24px}.stripIn{grid-template-columns:1fr}.stripPhoto{min-height:280px}.stripCopy{padding:45px 25px 55px}.specials{padding:50px 0}.specialIn{grid-template-columns:1fr;gap:24px;padding:27px}.specialSign strong{font-size:55px}.reviewsIn{display:block}.reviewCard{margin-top:26px}.reviewCard p{font-size:22px}.visit{padding:62px 0}.visitin{grid-template-columns:1fr;gap:30px}.details{gap:20px}.map{min-height:260px}.footin{display:block}.footlinks{margin-top:20px}.mobileOnly{display:block}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn{transition:none}}
+
+/* SUNSET MARKET — vibrant neighborhood-retail color exploration */
+:root{--market-green:#4b992e;--market-green-bright:#69b63b;--market-deep:#245e30;--market-yellow:#f6d95a;--market-outline:#b5c69b}
+.top{background:var(--market-deep);color:#fff9d7}
+.nav{border-bottom:3px solid var(--market-green)}
+.wordmark{color:#2a3b24}
+.wordmark small{color:#517539}
+.links a:hover,.links a:focus-visible{color:var(--market-green)}
+.lang{border-color:#83ac65}
+.lang button[aria-pressed=true]{background:var(--market-deep);color:white}
+.hero:before{background:linear-gradient(100deg,rgba(17,28,15,.86),rgba(27,36,20,.66) 58%,rgba(27,36,20,.30))}
+.since{color:var(--market-yellow)}
+.rule{background:var(--market-green-bright);height:4px}
+.btn.red{background:var(--market-green);border-color:var(--market-green);color:#fff}
+.btn.red:hover{background:var(--market-deep);border-color:var(--market-deep)}
+.btn.dark{background:var(--market-deep);border-color:var(--market-deep);color:#fff}
+.btn.dark:hover{background:#173f1d}
+.open-sign{border-color:#669b51;box-shadow:0 10px 25px #071e1080,0 0 0 3px #5ea83844}
+.open-sign .neon{color:#dcffb2;text-shadow:0 0 2px #fff,0 0 6px #baff78,0 0 15px #7bdb32,0 0 25px #54b52a}
+.open-sign small{color:#d4efb9}
+.bar{background:var(--market-green);color:#fff8d8;border-top:3px solid var(--market-yellow);border-bottom:3px solid var(--market-deep)}
+.barin .sep{color:var(--market-yellow);opacity:1}
+.eyebrow{color:var(--market-green)}
+.cat{border-color:#d5d7bd;box-shadow:0 3px 0 #d2d3b9;transition:transform .22s,box-shadow .22s,border-color .22s}
+.cat:hover{transform:translateY(-4px);border-color:var(--market-green);box-shadow:0 9px 0 #d2d3b9}
+.cat .index{color:var(--market-green);font-size:14px}
+.stripCopy .eyebrow{color:#b3e584}
+.photoStrip{background:#203926}
+.specials:before{background:#eee8d9d9}
+.specialIn{background:#fff9e7;border:2px solid #9fc278;box-shadow:11px 11px 0 #2b7035,0 23px 34px #223d1e42}
+.specialIn .eyebrow{color:var(--market-green)}
+.specialIn h2{color:#253c20}
+.specialSign{position:relative;background:var(--market-green);color:#fff;border:9px solid var(--market-yellow);outline:3px solid var(--market-deep);transform:rotate(1.2deg);box-shadow:5px 7px 0 #244e25}
+.specialSign:after{content:'✦';position:absolute;top:11px;right:15px;color:var(--market-yellow);font-size:31px}
+.specialSign strong{color:#fffcee;text-shadow:2px 3px 0 #24642e}
+.specialSign small{background:var(--market-yellow);color:#244e25;padding:9px 6px;font-weight:800}
+.reviews{background:#f7f4e8}
+.reviewCard{border-left:5px solid var(--market-green)}
+.visit{background:#e7e9d8}
+.details strong{color:var(--market-green)}
+.map{background:#dce8d0;border-color:#9bb88b}
+.footer{background:#1c3022;color:#e2e7d2}
+@media(prefers-reduced-motion:reduce){.cat{transition:none}.cat:hover{transform:none}}
+
+
+/* SUNSET MARKET V5 — restrained market green, burnt orange only in header/footer */
+:root { --market-orange:#d66c2f; --market-orange-dark:#a94b23; }
+/* Header and footer carry the orange counterbalance. */
+.top { background:var(--market-orange-dark); color:#fff8ef; }
+.nav { background:#f9f4eb; border-bottom:4px solid var(--market-orange); }
+.wordmark { color:var(--wood); }
+.wordmark small { color:#8a5b42; }
+.links a:hover,.links a:focus-visible { color:var(--market-orange-dark); }
+.lang { border-color:#c9ac97; }
+.lang button[aria-pressed=true] { background:var(--wood);color:#fff; }
+.footer { background:#a94b23; color:#fff4e8; }
+.footer a:hover,.footer a:focus-visible { color:#fff; text-decoration:underline; }
+.footer .disclaimer { color:#f9decd; border-top-color:#cf895f; }
+/* Return most of the interior to warm brown/cream, with green as a deliberate accent. */
+.hero:before { background:linear-gradient(100deg,rgba(35,23,19,.88),rgba(35,23,19,.62) 58%,rgba(35,23,19,.30)); }
+.since { color:#f6d95a; }
+.bar { background:var(--wood);color:#fff1db; border-top:0; border-bottom:4px solid #d66a2c; }
+.barin .sep {color:#f6d95a;}
+.eyebrow {color:#9b5140;}
+.cat { border-color:#dbccbd; box-shadow:0 3px 0 #e1d5c9; }
+.cat:hover { border-color:#6b9c47;box-shadow:0 8px 0 #e1d5c9; }
+.cat .index {color:#53883b;}
+.photoStrip {background:var(--wood);}
+.stripCopy .eyebrow {color:#f6d95a;}
+.specialIn {background:#fff8e9;border:1px solid #d8bfa1;box-shadow:8px 8px 0 #d5c7b7,0 18px 30px #3d281b1e;}
+.specialIn .eyebrow {color:#9b5140;}
+.specialIn h2 {color:var(--ink);}
+/* Keep one sign-like green focal point in the promotions panel. */
+.specialSign {background:#4b992e;border:7px solid #f6d95a;outline:2px solid #326b28;box-shadow:5px 7px 0 #c9b89e;}
+.reviews {background:var(--pale);}
+.reviewCard {border-left:4px solid #6b9c47;}
+.visit {background:#e8ded0;}
+.details strong {color:#a14d44;}
+.map {background:#d7ccbf;border-color:#bdb1a5;}
+/* Buttons: green deliberately limited to primary action. */
+.btn.dark {background:var(--wood);border-color:var(--wood);color:#fff;}
+.btn.dark:hover {background:#241912;border-color:#241912;}
+.btn.red {background:#548e32;border-color:#548e32;color:white;}
+.btn.red:hover {background:#346624;border-color:#346624;}
+.open-sign {border-color:#bb825b;box-shadow:0 10px 25px #190b0680;}
+.open-sign .neon {color:#ffbc70;text-shadow:0 0 3px #ffd9aa,0 0 9px #ef8c3d,0 0 19px #cb6122;}
+.open-sign small {color:#ffe1b0;}
+
+</style>
+</head>
+<body>
+<div class="top" data-i18n="top">INDEPENDENT NEIGHBORHOOD MARKET · ANAHEIM, CA</div>
+<header class="nav"><div class="container navin"><a class="wordmark" href="#top" aria-label="Sunset Market home">SUNSET MARKET<small data-i18n="wordmarkSub">GROCERIES & EVERYDAY ESSENTIALS</small></a><nav class="links" aria-label="Main navigation"><a href="#shop" data-i18n="nav1">What We Carry</a><a href="#specials" data-i18n="nav2">Specials</a><a href="#visit" data-i18n="nav3">Hours & Location</a><a href="tel:+19494781179" data-i18n="nav4">Call Us</a></nav><div class="lang" aria-label="Language"><button type="button" data-lang="en" aria-pressed="true">EN</button><button type="button" data-lang="es" aria-pressed="false">ES</button></div></div></header>
+<main id="top">
+<section class="hero"><div class="container heroin"><div class="herotext"><div class="since" data-i18n="since">SERVING THE NEIGHBORHOOD SINCE 1986</div><h1>SUNSET<span>MARKET.</span></h1><div class="rule"></div><p data-i18n="heroDesc">Groceries. Cold drinks. Snacks. Everyday essentials.</p><div class="actions"><a class="btn red" href="#visit" data-i18n="directions">Hours & Directions ↗</a><a class="btn light" href="tel:+19494781179" data-i18n="call">Call the Store ↗</a></div></div><div class="heroimage"><img src="sunset-market-interior.jpg" alt="Neighborhood convenience market counter stocked with familiar everyday products" fetchpriority="high"><div class="open-sign" aria-label="Open daily"><span class="neon">OPEN</span><small data-i18n="openSign">DAILY · 7AM–11PM</small></div></div></div></section>
+<div class="bar"><div class="container barin"><span data-i18n="bar1">COLD DRINKS</span><span class="sep">✦</span><span data-i18n="bar2">GROCERIES</span><span class="sep">✦</span><span data-i18n="bar3">SNACKS</span><span class="sep">✦</span><span data-i18n="bar4">OPEN DAILY</span></div></div>
+<section class="section" id="shop"><div class="container"><div class="sectionhead"><div><div class="eyebrow" data-i18n="shopTop">IN STORE</div><h2 data-i18n="shopTitle">WHAT WE CARRY</h2></div><p data-i18n="shopDesc">Stop in for the everyday stuff. Inventory varies by store.</p></div><div class="categories"><article class="cat"><span class="index">01 /</span><h3 data-i18n="cat1">COLD DRINKS</h3></article><article class="cat"><span class="index">02 /</span><h3 data-i18n="cat2">SNACKS & CANDY</h3></article><article class="cat"><span class="index">03 /</span><h3 data-i18n="cat3">GROCERIES</h3></article><article class="cat"><span class="index">04 /</span><h3 data-i18n="cat4">HOUSEHOLD ESSENTIALS</h3></article></div></div></section>
+<section class="photoStrip"><div class="stripIn"><div class="stripPhoto" role="img" aria-label="Neighborhood market shelves and counter"></div><div class="stripCopy"><div class="eyebrow" data-i18n="stripTop">LOCAL SINCE 1986</div><h2 data-i18n="stripTitle">RIGHT AROUND THE CORNER.</h2><p data-i18n="stripText">Independent. Family owned. Open every day. Stop by for what you need.</p></div></div></section>
+<section class="specials" id="specials"><div class="container"><div class="specialIn"><div><div class="eyebrow" data-i18n="specialTop">AT THE COUNTER</div><h2 data-i18n="specialTitle">GOOD STUFF. GOOD PRICES.</h2><p data-i18n="specialText">Prices and availability change. Give us a call or stop by to see what's in stock.</p><a class="btn dark" href="tel:+19494781179" data-i18n="specialCall">Call the Store ↗</a></div><div class="specialSign"><strong data-i18n="signMain">COLD DRINKS.<br>GOOD PRICES.</strong><small data-i18n="signSub">YOUR LOCAL MARKET</small></div></div></div></section>
+<section class="reviews" id="reviews"><div class="container reviewsIn"><div><div class="eyebrow" data-i18n="reviewTop">REVIEWS</div><h2 data-i18n="reviewTitle">WHAT OUR CUSTOMERS SAY</h2><p style="color:#796e63;font-size:13px;max-width:420px" data-i18n="reviewNote">Real customer reviews will be added when the website is customized.</p></div><div class="reviewCard"><p data-i18n="reviewQuote">“This space is reserved for a genuine, approved customer review.”</p><small data-i18n="reviewAuthor">DEMO TESTIMONIAL PLACEHOLDER</small></div></div></section>
+<section class="visit" id="visit"><div class="container visitin"><div><div class="eyebrow" data-i18n="visitTop">STOP BY</div><h2 data-i18n="visitTitle">HOURS & LOCATION</h2><div class="details"><div><strong data-i18n="hoursLabel">HOURS</strong><p data-i18n="hoursText">Open daily<br>7:00 AM – 11:00 PM<br><small>(Demo hours)</small></p></div><div><strong data-i18n="locationLabel">LOCATION</strong><p data-i18n="locationText">Anaheim, California<br>Address provided at setup</p></div><div><strong data-i18n="phoneLabel">PHONE</strong><p><a href="tel:+19494781179">(949) 478-1179</a></p></div><div><strong data-i18n="langLabel">LANGUAGES</strong><p>English / Español</p></div></div><div class="actions"><a href="https://www.google.com/maps/search/?api=1&query=Anaheim+California" class="btn red" target="_blank" rel="noopener noreferrer" data-i18n="mapBtn">View Area Map ↗</a><a href="tel:+19494781179" class="btn dark" data-i18n="phoneBtn">Call ↗</a></div></div><div class="map"><div><div class="mapIcon">⌖</div><strong data-i18n="mapTitle">FIND US HERE</strong><p data-i18n="mapText">Demo website. The customer's actual address and embedded Google Map will appear here.</p></div></div></div></section>
+</main><footer class="footer"><div class="container"><div class="footin"><div class="wordmark" style="font-size:23px">SUNSET MARKET<small data-i18n="footerSub">NEIGHBORHOOD MARKET · DEMO</small></div><div class="footlinks"><a href="#shop" data-i18n="nav1">What We Carry</a><a href="#visit" data-i18n="nav3">Hours & Location</a><a href="tel:+19494781179">(949) 478-1179</a></div></div><div class="disclaimer" data-i18n="disclaimer">Concept website by Homegrown Marketing. Sunset Market is a fictional demonstration business. Hours, founding year, inventory and location are examples, not actual business claims. Phone number connects to Homegrown Marketing.</div></div></footer>
+<script>
+const es={top:'MERCADO INDEPENDIENTE · ANAHEIM, CA',wordmarkSub:'ABARROTES Y ARTÍCULOS BÁSICOS',nav1:'Productos',nav2:'Ofertas',nav3:'Horario y ubicación',nav4:'Llámanos',since:'SIRVIENDO AL VECINDARIO DESDE 1986',heroDesc:'Abarrotes. Bebidas frías. Botanas. Artículos básicos.',directions:'Horario y cómo llegar ↗',call:'Llamar a la tienda ↗',openSign:'TODOS LOS DÍAS · 7 A. M.–11 P. M.',bar1:'BEBIDAS FRÍAS',bar2:'ABARROTES',bar3:'BOTANAS',bar4:'ABIERTO TODOS LOS DÍAS',shopTop:'EN LA TIENDA',shopTitle:'LO QUE TENEMOS',shopDesc:'Pasa por lo que necesitas. Los productos disponibles pueden variar.',cat1:'BEBIDAS FRÍAS',cat2:'BOTANAS Y DULCES',cat3:'ABARROTES',cat4:'ARTÍCULOS PARA EL HOGAR',stripTop:'EN EL BARRIO DESDE 1986',stripTitle:'A LA VUELTA DE LA ESQUINA.',stripText:'Negocio independiente y familiar. Abierto todos los días. Pasa por lo que necesitas.',specialTop:'EN EL MOSTRADOR',specialTitle:'BUENOS PRODUCTOS. BUENOS PRECIOS.',specialText:'Los precios y la disponibilidad pueden cambiar. Llámanos o visítanos para conocer nuestros productos.',specialCall:'Llamar a la tienda ↗',signMain:'BEBIDAS FRÍAS.<br>BUENOS PRECIOS.',signSub:'TU MERCADO LOCAL',reviewTop:'RESEÑAS',reviewTitle:'LO QUE DICEN NUESTROS CLIENTES',reviewNote:'Agregaremos reseñas auténticas de clientes cuando se personalice el sitio.',reviewQuote:'“Este espacio está reservado para una reseña auténtica y autorizada de un cliente.”',reviewAuthor:'RESEÑA DE EJEMPLO',visitTop:'VISÍTANOS',visitTitle:'HORARIO Y UBICACIÓN',hoursLabel:'HORARIO',hoursText:'Todos los días<br>7:00 a. m. – 11:00 p. m.<br><small>(Horario de ejemplo)</small>',locationLabel:'UBICACIÓN',locationText:'Anaheim, California<br>La dirección se agregará durante la configuración',phoneLabel:'TELÉFONO',langLabel:'IDIOMAS',mapBtn:'Ver mapa de la zona ↗',phoneBtn:'Llamar ↗',mapTitle:'ENCUÉNTRANOS',mapText:'Sitio de demostración. Aquí se mostrará la dirección real del cliente y un mapa interactivo de Google.',footerSub:'MERCADO DE BARRIO · DEMOSTRACIÓN',disclaimer:'Sitio de muestra de Homegrown Marketing. Sunset Market es un negocio ficticio. Los horarios, el año de fundación, los productos y la ubicación son ilustrativos. El número de teléfono corresponde a Homegrown Marketing.'};
+const nodes=[...document.querySelectorAll('[data-i18n]')];nodes.forEach(el=>el.dataset.en=el.innerHTML);function changeLang(lang){for(const el of nodes){const key=el.dataset.i18n;el.innerHTML=lang==='es'&&es[key]!==undefined?es[key]:el.dataset.en}document.documentElement.lang=lang;document.querySelectorAll('[data-lang]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.lang===lang)));try{localStorage.setItem('hgm-sunset-market-language',lang)}catch(e){}}document.querySelectorAll('[data-lang]').forEach(b=>b.addEventListener('click',()=>changeLang(b.dataset.lang)));let saved='en';try{saved=localStorage.getItem('hgm-sunset-market-language')==='es'?'es':'en'}catch(e){}changeLang(saved);
+</script>
+</body></html>
